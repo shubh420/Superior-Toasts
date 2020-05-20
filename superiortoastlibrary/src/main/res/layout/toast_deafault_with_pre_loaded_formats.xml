@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_alignParentBottom="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvToastBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxWidth="375dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="40dp"
+        app:cardCornerRadius="5dp">
+
+        <RelativeLayout
+            android:id="@+id/rl1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <View
+                android:id="@+id/viewColoredLeft"
+                android:layout_width="9dp"
+                android:layout_height="0dp"
+                android:layout_alignTop="@id/rl2"
+                android:layout_alignBottom="@id/rl2"
+                android:background="#46D160" />
+
+            <RelativeLayout
+                android:id="@+id/rl2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/viewColoredLeft">
+
+
+                <ImageView
+                    android:id="@+id/ivIcon"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_reddit_icon_svg"
+                    android:background="@android:color/transparent"
+                    />
+
+                <LinearLayout
+                    android:id="@+id/llContainrFrTvs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_toRightOf="@id/ivIcon"
+                    android:layout_toLeftOf="@id/btActionToast"
+                    android:paddingTop="17dp"
+                    android:paddingBottom="17dp"
+                    >
+
+                    <TextView
+                        android:id="@+id/tvMsgHeader"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:textSize="17sp"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="Message"
+                        android:textColor="#121212"
+                        android:layout_centerVertical="true"/>
+
+                    <TextView
+                        android:id="@+id/tvMsgContent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:layout_centerVertical="true"
+                        android:ellipsize="end"
+                        android:textSize="13.5sp"
+
+                        android:maxLines="4"
+                        android:text="Message"
+                        android:textColor="#121212" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/btActionToast"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="show toast"
+                    android:textSize="17sp"
+                    android:textColor="#46D160"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:maxWidth="125dp"
+                    android:padding="5dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:visibility="gone"
+
+                    android:background="@android:color/transparent"
+                    android:fontFamily="sans-serif-medium"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    />
+
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentB">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="200dp"
+
+        >
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:padding="10dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Superior toasts with PreDesigned headers"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:gravity="center"
+                android:fontFamily="sans-serif-medium"
+                android:padding="10dp"
+                android:textColor="@color/colorPrimary" />
+
+
+            <Button
+                android:id="@+id/btShowToast1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_centerInParent="true"
+                android:text="Superior Toast Success" />
+
+            <Button
+                android:id="@+id/btShowToast2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Superior Toast Error" />
+            <Button
+                android:id="@+id/btShowToast5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Superior Toast Warning" />
+
+            <Button
+                android:id="@+id/btShowToast3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:maxWidth="375dp"
+                android:text="Superior Toast Info" />
+
+            <Button
+                android:id="@+id/btShowToast4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:text="Superior Toast Custom" />
+
+            <!---===============================-->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="@android:color/darker_gray"
+                android:layout_margin="10dp"/>
+
+            <Button
+                android:id="@+id/btShowToast6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:text="Superior Toast Success dark mode" />
+
+            <Button
+                android:id="@+id/btShowToast7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Superior Toast With Subtitle" />
+
+            <Button
+                android:id="@+id/btShowToast8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Superior Toast Success with Animation (Slide bottom)" />
+
+            <Button
+                android:id="@+id/btShowToast9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Superior Toast Success with Action" />
+
+
+            <!--          <View
+                          android:layout_width="match_parent"
+                          android:layout_height="5dp"
+                          android:background="@android:color/darker_gray"
+                          android:layout_margin="10dp"/>-->
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</FrameLayout>

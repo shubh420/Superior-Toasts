@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentA">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+android:layout_marginBottom="200dp"
+
+        >
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:padding="10dp"
+            >
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Superior toasts "
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="@color/colorPrimary" />
+
+            <Button
+                android:id="@+id/btShowToast1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_centerInParent="true"
+                android:text="Superior Toast Default" />
+
+            <Button
+                android:id="@+id/btShowToast2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Superior Toast with Icon image" />
+            <Button
+                android:id="@+id/btShowToast5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Superior Toast with Dark mode" />
+
+            <Button
+                android:id="@+id/btShowToast8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Superior Toast with Custom background (any Drawable)" />
+
+            <Button
+                android:id="@+id/btShowToast3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:maxWidth="375dp"
+                android:text="Superior Toast with animation(slide from bottom ,entry and exit)" />
+
+            <Button
+                android:id="@+id/btShowToast4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:text="Superior Toast with action(like snaclbar)" />
+
+
+            <Button
+                android:id="@+id/btShowToast6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:text="Superior Toast with action and animation (Left right slide entry exit)" />
+
+            <Button
+                android:id="@+id/btShowToast7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Superior Toast with action and dissmiss on action button click" />
+
+
+            <!--          <View
+                          android:layout_width="match_parent"
+                          android:layout_height="5dp"
+                          android:background="@android:color/darker_gray"
+                          android:layout_margin="10dp"/>-->
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</FrameLayout>
