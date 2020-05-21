@@ -14,9 +14,9 @@ Create beautiful toasts(like reddit android app's) with features like Icon, head
 <table style="width:100%">
   <tr>
     <th>1. Default </th>
-    <th>2. Color Motion Toast</th> 
-    <th>3. Dark Toast </th>
-    <th>4. Dark Color Toast</th> 
+    <th>2. with Icon Image</th> 
+    <th>3. with dark mode </th>
+    <th>4. custom bg and side bar removed</th> 
   </tr>
   <tr>
     <td><img src = "https://github.com/shubh420/Superior-Toasts/blob/shubh420-image-resources-update/Image%20Resources/1gif.gif?raw=true"/></td> 
