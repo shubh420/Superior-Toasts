@@ -9,7 +9,7 @@ Create beautiful toasts(like reddit android app's) with features like Icon, head
         width="264" height="520" /> 
 </p>
 
-##
+## 
 ## Preview - Superior Toast 
 
 <table style="width:100%">
