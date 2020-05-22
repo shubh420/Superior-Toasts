@@ -70,7 +70,7 @@ Create beautiful toasts(like reddit android app's) with features like Icon, head
     <th>1. with Action Button (like snackbar's)  </th>
     <th>2. with animation (slide left right) </th> 
     <th>3. tost dissmiss on action button click(manuall dissmiss) </th>
-        <th>4. action button with Pre designed toast (success) </th>
+        <th>4. action button with Pre designed toast (error) </th>
         <th>5. with content text, duration indefinite and manual dissmiss</th>
   </tr>
   <tr>
