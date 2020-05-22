@@ -83,5 +83,34 @@ Create beautiful toasts(like reddit android app's) with features like Icon, head
 </table>
 
 
+<a href="https://play.google.com/store/apps/details?id=io.shubh.superiortoast">
+    <img alt="Get it on Google Play"
+        height="80"
+        src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png" />
+</a>
+
+## Prerequisites
+
+Add this in your root `build.gradle` file (**not** your module `build.gradle` file):
+
+```gradle
+allprojects {
+	repositories {
+		...
+		maven { url "https://jitpack.io" }
+	}
+}
+```
+
+## Dependency
+
+Add this to your module's `build.gradle` file (make sure the version matches the JitPack badge above):
+
+```gradle
+dependencies {
+	...
+ implementation 'com.github.shubh420:Superior-Toasts:v1.0'
+}```
+
 
 
