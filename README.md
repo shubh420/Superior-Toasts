@@ -63,6 +63,25 @@ Create beautiful toasts(like reddit android app's) with features like Icon, head
   </tr>
 </table>
 
+## Superior Toasts with Action buttons.
+
+<table style="width:100%">
+  <tr>
+    <th>1. with Action Button (like snackbar's)  </th>
+    <th>2. with animation (slide left right) </th> 
+    <th>3. tost dissmiss on action button click(manually) </th>
+        <th>4. action button with Pre designed toast (success) </th>
+        <th>5. with toast with content text and duration indefinite </th>
+  </tr>
+  <tr>
+    <td><img src = "https://github.com/shubh420/Superior-Toasts/blob/shubh420-image-resources-update/Image%20Resources/1111.gif?raw=true"/></td> 
+    <td><img src = "https://github.com/shubh420/Superior-Toasts/blob/shubh420-image-resources-update/Image%20Resources/2222.gif?raw=true"/></td>
+    <td><img src = "https://github.com/shubh420/Superior-Toasts/blob/shubh420-image-resources-update/Image%20Resources/3333.gif?raw=true"/></td> 
+       <td><img src = "https://github.com/shubh420/Superior-Toasts/blob/shubh420-image-resources-update/Image%20Resources/4444.gif?raw=true"/></td> 
+       <td><img src = "https://github.com/shubh420/Superior-Toasts/blob/shubh420-image-resources-update/Image%20Resources/5555.gif?raw=true"/></td> 
+  </tr>
+</table>
+
 
 
 
