@@ -82,6 +82,7 @@ Create beautiful toasts(like reddit android app's) with features like Icon, head
   </tr>
 </table>
 
+## Demo App
 
 <a href="https://play.google.com/store/apps/details?id=io.shubh.superiortoast">
     <img alt="Get it on Google Play"
@@ -111,6 +112,9 @@ dependencies {
 	...
  implementation 'com.github.shubh420:Superior-Toasts:v1.0'
 }```
+
+### Dependency
+
 
 
 
