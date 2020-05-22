@@ -58,7 +58,7 @@ Create beautiful toasts(like reddit android app's) with features like Icon, head
   </tr>
   <tr>
     <td><img src = "https://github.com/shubh420/Superior-Toasts/blob/shubh420-image-resources-update/Image%20Resources/111gif.gif?raw=true"/></td> 
-    <td><img src = "https://github.com/shubh420/Superior-Toasts/blob/shubh420-image-resources-update/Image%20Resources/223gif.gif?raw=true"/></td>
+    <td><img src = "https://github.com/shubh420/Superior-Toasts/blob/shubh420-image-resources-update/Image%20Resources/222gif.gif?raw=true"/></td>
     <td><img src = "https://github.com/shubh420/Superior-Toasts/blob/shubh420-image-resources-update/Image%20Resources/333gif.gif?raw=true"/></td> 
   </tr>
 </table>
