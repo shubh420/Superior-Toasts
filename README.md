@@ -120,14 +120,20 @@ dependencies {
 
 ### Default
 
-  <img src="img align="left" src="https://github.com/shubh420/Superior-Toasts/blob/shubh420-image-resources-update/Image%20Resources/1ForCodeSnippets.PNG?raw=true" /> 
+<p float="left">
+  <img align="left" src="https://github.com/shubh420/Superior-Toasts/blob/shubh420-image-resources-update/Image%20Resources/1ForCodeSnippets.PNG?raw=true" />            
+
+```
+ SuperiorToast.makeSuperiorToast(getContext().getApplicationContext(), "hello")
+	.show();
+```
+</p>
+
+
 	
 
 
-```
- SuperiorToast.makeSuperiorToast(getContext().getApplicationContext(),
-                        "hello").show();
-```
+
 
 
 
