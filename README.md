@@ -2,7 +2,7 @@
 Create beautiful toasts(like reddit android app's) with features like Icon, headers, action buttons(like snackbar's) and animations support.
 
 <p float="left">
-  <img align="top" src="https://raw.githubusercontent.com/shubh420/Superior-Toasts/shubh420-image-resources-update/Image%20Resources/iconpng.png" width="250" height="250" />            
+  <img align="top" src="https://github.com/shubh420/Superior-Toasts/blob/shubh420-image-resources-update/Image%20Resources/iconpng.png?raw=true" width="250" height="250" />            
   <img src="https://github.com/shubh420/Superior-Toasts/blob/shubh420-image-resources-update/Image%20Resources/22.png?raw=true"
         width="264" height="520" />            
   <img src="https://github.com/shubh420/Superior-Toasts/blob/shubh420-image-resources-update/Image%20Resources/44.png?raw=true"
@@ -57,9 +57,9 @@ Create beautiful toasts(like reddit android app's) with features like Icon, head
     <th>3. Fade In Fade out </th>
   </tr>
   <tr>
-    <td><img src = "https://github.com/shubh420/Superior-Toasts/blob/shubh420-image-resources-update/Image%20Resources/111gif.gif?raw=true"/></td> 
-    <td><img src = "https://github.com/shubh420/Superior-Toasts/blob/shubh420-image-resources-update/Image%20Resources/222gif.gif?raw=true"/></td>
-    <td><img src = "https://github.com/shubh420/Superior-Toasts/blob/shubh420-image-resources-update/Image%20Resources/333gif.gif?raw=true"/></td> 
+    <td><img src = "https://github.com/shubh420/Superior-Toasts/blob/shubh420-image-resources-update/Image%20Resources/111.gif?raw=true"/></td> 
+    <td><img src = "https://github.com/shubh420/Superior-Toasts/blob/shubh420-image-resources-update/Image%20Resources/222.gif?raw=true"/></td>
+    <td><img src = "https://github.com/shubh420/Superior-Toasts/blob/shubh420-image-resources-update/Image%20Resources/333.gif?raw=true"/></td> 
   </tr>
 </table>
 
