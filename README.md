@@ -111,10 +111,7 @@ Add this to your module's `build.gradle` file (make sure the version matches the
 dependencies {
 	...
  implementation 'com.github.shubh420:Superior-Toasts:v1.0'
-}```
-
-### Dependency
-
-
-
+}
+```
+###cdvz
 
