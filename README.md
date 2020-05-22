@@ -48,5 +48,21 @@ Create beautiful toasts(like reddit android app's) with features like Icon, head
 </table>
 
 
+## Animations.
+
+<table style="width:100%">
+  <tr>
+    <th>1. Slide Left Right Entry Exit  </th>
+    <th>2. Slide Bottom Entry Exit </th> 
+    <th>3. Fade In Fade out </th>
+  </tr>
+  <tr>
+    <td><img src = "https://github.com/shubh420/Superior-Toasts/blob/shubh420-image-resources-update/Image%20Resources/111gif.gif?raw=true"/></td> 
+    <td><img src = "https://github.com/shubh420/Superior-Toasts/blob/shubh420-image-resources-update/Image%20Resources/223gif.gif?raw=true"/></td>
+    <td><img src = "https://github.com/shubh420/Superior-Toasts/blob/shubh420-image-resources-update/Image%20Resources/333gif.gif?raw=true"/></td> 
+  </tr>
+</table>
+
+
 
 
