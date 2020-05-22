@@ -114,11 +114,14 @@ dependencies {
 }
 ```
 
-##Usage
-#Sample Code for - Superior Toasts
+## Usage
+
+# Sample Code for - Superior Toasts
+
 ### Default
 
 <img align="left" width="100" height="100" src="img align="left" width="100" height="100" src="https://github.com/shubh420/Superior-Toasts/blob/shubh420-image-resources-update/Image%20Resources/1ForCodeSnippets.PNG?raw=true">
+
 ```
  SuperiorToast.makeSuperiorToast(getContext().getApplicationContext(),
                         "hello").show();
