@@ -9,7 +9,7 @@ Create beautiful toasts(like reddit android app's) with features like Icon, head
         width="264" height="520" /> 
 </p>
 
-## 
+
 ## Preview - Superior Toast 
 
 <table style="width:100%">
@@ -113,5 +113,20 @@ dependencies {
  implementation 'com.github.shubh420:Superior-Toasts:v1.0'
 }
 ```
-###cdvz
+
+##Usage
+#Sample Code for - Superior Toasts
+### Default
+
+<img align="left" width="100" height="100" src="img align="left" width="100" height="100" src="https://github.com/shubh420/Superior-Toasts/blob/shubh420-image-resources-update/Image%20Resources/1ForCodeSnippets.PNG?raw=true">
+```
+ SuperiorToast.makeSuperiorToast(getContext().getApplicationContext(),
+                        "hello").show();
+```
+
+
+
+
+
+
 
