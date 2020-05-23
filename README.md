@@ -304,7 +304,7 @@ ParentOrRootView is the rootmost container layout of the xml of activity. <b>Its
 * <b>Animation Slide Left Right Entry Exit</b>
 
 <p float="left">
-  <img align="left" src="https://github.com/shubh420/Superior-Toasts/blob/shubh420-image-resources-update/Image%20Resources/111.gif?raw=true""   width="200"   />            
+  <img align="left" src="https://github.com/shubh420/Superior-Toasts/blob/shubh420-image-resources-update/Image%20Resources/111.gif?raw=true""   width="180"   />            
 
 for toasts from 'SuperiorToast' class.
 ```
@@ -324,11 +324,12 @@ SuperiorToastWithHeadersPreDesigned.makeSuperiorToast(getContext().getApplicatio
 
 </p>
 
-
+\
+\
 * <b>Animation Slide Bottom Entry Exit</b>
 
 <p float="left">
-  <img align="left" src="https://github.com/shubh420/Superior-Toasts/blob/shubh420-image-resources-update/Image%20Resources/222.gif?raw=true""   width="200"   />            
+  <img align="right" src="https://github.com/shubh420/Superior-Toasts/blob/shubh420-image-resources-update/Image%20Resources/222.gif?raw=true""   width="180"   />            
 
 for toasts from 'SuperiorToast' class.
 ```
@@ -347,11 +348,12 @@ SuperiorToastWithHeadersPreDesigned.makeSuperiorToast(getContext().getApplicatio
 ```
 
 </p>
-
+\
+\
 * <b>Animation Fade In Fade Out Entry Exit</b>
 
 <p float="left">
-  <img align="left" src="https://github.com/shubh420/Superior-Toasts/blob/shubh420-image-resources-update/Image%20Resources/333.gif?raw=true""   width="200"   />            
+  <img align="left" src="https://github.com/shubh420/Superior-Toasts/blob/shubh420-image-resources-update/Image%20Resources/333.gif?raw=true""   width="180"   />            
 
 for toasts from 'SuperiorToast' class.
 ```
