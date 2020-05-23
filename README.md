@@ -330,7 +330,7 @@ SuperiorToastWithHeadersPreDesigned.makeSuperiorToast(getContext().getApplicatio
 <p float="left">
   <img align="right" src="https://github.com/shubh420/Superior-Toasts/blob/shubh420-image-resources-update/Image%20Resources/222.gif?raw=true""   width="190"   />            
 
-for toasts from 'SuperiorToast' class.
+\for toasts from 'SuperiorToast' class.
 ```
 SuperiorToast.makeSuperiorToast(getContext().getApplicationContext(),"hello")
 	.setToastIcon(getResources().getDrawable(R.drawable.ic_reddit_icon_svg))
@@ -353,7 +353,7 @@ SuperiorToastWithHeadersPreDesigned.makeSuperiorToast(getContext().getApplicatio
 <p float="left">
   <img align="left" src="https://github.com/shubh420/Superior-Toasts/blob/shubh420-image-resources-update/Image%20Resources/333.gif?raw=true""   width="190"   />            
 
-for toasts from 'SuperiorToast' class.
+\for toasts from 'SuperiorToast' class.
 ```
 SuperiorToast.makeSuperiorToast(getContext().getApplicationContext(),"hello")
 	.setToastIcon(getResources().getDrawable(R.drawable.ic_reddit_icon_svg))
