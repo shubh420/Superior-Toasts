@@ -131,7 +131,7 @@ dependencies {
 
 ### UI Customizations
 
-*<b> set Icon Image</b>
+* <b> set Icon Image</b>
 
 <p float="left">
   <img align="left" src="https://github.com/shubh420/Superior-Toasts/blob/shubh420-image-resources-update/Image%20Resources/2ForCodeSnippets.png?raw=true"   width="275" height="80"   />            
@@ -143,7 +143,7 @@ dependencies {
 ```
 </p>
 
-*<b>set Dark Mode </b> to any kind of toast ,just call  ```.setDarkMode()``` on it.
+* <b>set Dark Mode </b> to any kind of toast ,just call  ```.setDarkMode()``` on it.
 
 
 <p float="left">
@@ -157,7 +157,7 @@ dependencies {
 ```
 </p>
 
-*<B> set Custom Background </B>(any kind of Drawable)<b> and other customization functions. </b>
+* <B> set Custom Background </B>(any kind of Drawable)<b> and other customization functions. </b>
 
 
 <p float="left">
@@ -173,13 +173,13 @@ dependencies {
 ```
 </p>
 
-* ```.setToastIconTintColor(String HexCodeColorString)``` //pass hex color code string 
+* <p>* ```.setToastIconTintColor(String HexCodeColorString)``` //pass hex color code string 
 * ```.setElevation(float f)``` //pass floast value between 0f and 100f //applicable when the toast is shown using ```showWithAction``` 		or ```showWithSimpleAnimation ``` functions
 * ```.setTextColor(String HexCodeColorString)```
 * ```.setBackgroundColor(String HexCodeColorString)``` //background of toast
 * ```.setBackgroundDrawable(Drawable drawable) ```
 * ```.setColorToLeftVerticleStrip(String HexCodeColorString)``` 
-* ```.removeLeftVerticleStrip()``` 
+* ```.removeLeftVerticleStrip()``` </p>
 
 
 # Sample Code for - Superior Toasts with Pre-designed Toasts ,ready for use
