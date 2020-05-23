@@ -285,3 +285,37 @@ SuperiorToastWithHeadersPreDesigned.makeSuperiorToast(getContext().getApplicatio
 * ```.removeLeftVerticleStrip()``` 
 
 
+# Animations
+### Four Animation options
+```
+        1. ANIMATION_SLIDE_LEFT_RIGHT_ENTRY_EXIT
+        2. ANIMATION_FADE_IN_OUT_ENTRY_EXIT
+        3. ANIMATION_SLIDE_BOTTOM_ENTRY_EXIT
+        4. ANIMATION_NO_ANIMATION
+```
+### Code
+
+For to show toasts with animatoions replace `.show()` methods in above codes with `.showWithSimpleAnimation( ViewGroup parentOrRootView, int animationType)`.
+ParentOrRootView is the rootmost container layout of the xml of activity. <b>Its neccessary that rootmost layout is either Relative?frame/Coordinator/constraint Layout</b>.Just pass `(ViewGroup) this.getWindow().getDecorView().getRootView() ` as 'parentOrRootView' parameter when calling from activty.Pass `(ViewGroup) getActivity().getWindow().getDecorView().getRootView() ` when calling from fragment.
+
+* <b>Animation Slide Left Right Entry Exit</b>
+
+<p float="left">
+  <img align="left" src="https://github.com/shubh420/Superior-Toasts/blob/shubh420-image-resources-update/Image%20Resources/111.gif?raw=true""   width="200"   />            
+
+for toasts from 'SuperiorToast' class.
+```
+SuperiorToast.makeSuperiorToast(getContext().getApplicationContext(),"hello")
+	.setToastIcon(getResources().getDrawable(R.drawable.ic_reddit_icon_svg))
+	.showWithSimpleAnimation((ViewGroup) getActivity().getWindow().getDecorView().getRootView() 							,SuperiorToast.ANIMATION_SLIDE_LEFT_RIGHT_ENTRY_EXIT);
+```
+for toasts from 'SuperiorToastWithHeadersPreDesigned' class.
+```
+SuperiorToastWithHeadersPreDesigned.makeSuperiorToast(getContext().getApplicationContext()
+		,SuperiorToastWithHeadersPreDesigned.SUCCESS_TOAST)
+		.showWithSimpleAnimation((ViewGroup) getActivity().getWindow().getDecorView().getRootView()
+			,SuperiorToastWithHeadersPreDesigned.ANIMATION_SLIDE_LEFT_RIGHT_ENTRY_EXIT);
+
+```
+
+</p>
