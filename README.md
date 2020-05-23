@@ -173,7 +173,7 @@ dependencies {
 ```
 </p>
 
-* ````.setToastIconTintColor(String HexCodeColorString)``` //pass hex color code string 
+* ```.setToastIconTintColor(String HexCodeColorString)``` //pass hex color code string 
 * ```.setElevation(float f)``` //pass floast value between 0f and 100f //applicable when the toast is shown using ```showWithAction``` 		or ```showWithSimpleAnimation ``` functions
 * ```.setTextColor(String HexCodeColorString)```
 * ```.setBackgroundColor(String HexCodeColorString)``` //background of toast
@@ -183,9 +183,59 @@ dependencies {
 
 
 # Sample Code for - Superior Toasts with Pre-designed Toasts ,ready for use
-### Five toast types 
-```	INFORMATION_TOAST
-	ERROR_TOAST;
-	WARNING_TOAST
-	SUCCESS_TOAST
-	CUSTOM_TOAST  ``` 
+<b> Five toast types </b> 
+```
+        1. INFORMATION_TOAST
+        2. ERROR_TOAST
+        3. WARNING_TOAST
+        4. SUCCESS_TOAST
+        5. CUSTOM_TOAST
+```
+
+<b> deafult </b> 
+<p float="left">
+  <img align="left" src="https://github.com/shubh420/Superior-Toasts/blob/shubh420-image-resources-update/Image%20Resources/5ForCodeSnippets.png?raw=true"   width="275" height="80"   />            
+
+```
+SuperiorToastWithHeadersPreDesigned.makeSuperiorToast(getContext().getApplicationContext()
+	,SuperiorToastWithHeadersPreDesigned.INFORMATION_TOAST)
+		.show();
+```
+</p>
+<p float="left">
+  <img align="left" src="https://github.com/shubh420/Superior-Toasts/blob/shubh420-image-resources-update/Image%20Resources/6ForCodeSnippets.png?raw=true"   width="275" height="80"   />            
+
+```
+SuperiorToastWithHeadersPreDesigned.makeSuperiorToast(getContext().getApplicationContext()
+	,SuperiorToastWithHeadersPreDesigned.ERROR_TOAST)
+		.show();
+```
+</p>
+<p float="left">
+  <img align="left" src="https://github.com/shubh420/Superior-Toasts/blob/shubh420-image-resources-update/Image%20Resources/7ForCodeSnippets.png?raw=true"   width="275" height="80"   />            
+
+```
+SuperiorToastWithHeadersPreDesigned.makeSuperiorToast(getContext().getApplicationContext()
+	,SuperiorToastWithHeadersPreDesigned.WARNING_TOAST)
+		.show();
+```
+</p>
+<p float="left">
+  <img align="left" src="https://github.com/shubh420/Superior-Toasts/blob/shubh420-image-resources-update/Image%20Resources/8ForCodeSnippets.png?raw=true"   width="275" height="80"   />            
+
+```
+SuperiorToastWithHeadersPreDesigned.makeSuperiorToast(getContext().getApplicationContext()
+	,SuperiorToastWithHeadersPreDesigned.SUCCESS_TOAST)
+		.show();
+```
+</p>
+<p float="left">
+  <img align="left" src="https://github.com/shubh420/Superior-Toasts/blob/shubh420-image-resources-update/Image%20Resources/9ForCodeSnippets.png?raw=true"   width="275" height="80"   />            
+
+```
+SuperiorToastWithHeadersPreDesigned.makeSuperiorToast(getContext().getApplicationContext()
+	,SuperiorToastWithHeadersPreDesigned.CUSTOM_TOAST)
+		.show();
+```
+</p>
+
