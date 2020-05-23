@@ -380,27 +380,29 @@ Replace `.show()` with `showWithAction(ViewGroup parentOrRootView, String action
 
 'actionName' is the name of the action button.
 
-### for toasts from 'SuperiorToast' class 
+*<b> for toasts from 'SuperiorToast' class </b>
 
 <p float="left">
-  <img align="left" src="https://github.com/shubh420/Superior-Toasts/blob/shubh420-image-resources-update/Image%20Resources/12ForCodeSnippets.png?raw=true"   width="185"   />            
+  <img align="left" src="https://github.com/shubh420/Superior-Toasts/blob/shubh420-image-resources-update/Image%20Resources/12ForCodeSnippets.PNG?raw=true"   width="185"   />            
 
-for toasts from 'SuperiorToast' class.
 ```
 SuperiorToast.makeSuperiorToast(getContext().getApplicationContext(),"hello")
 	.setToastIcon(getResources().getDrawable(R.drawable.ic_reddit_icon_svg))
-	.showWithAction((ViewGroup) getActivity().getWindow().getDecorView().getRootView() ,
-		"Click" , new SuperiorToast.SuperiorToastActionCallback() {
+	.showWithAction((ViewGroup) getActivity().getWindow().getDecorView().getRootView()
+		,"Click" 
+		, new SuperiorToast.SuperiorToastActionCallback() {
 		    @Override
 		    public void onActionButtonClicked() {
 			Toast.makeText(getContext(), "Clicked..", Toast.LENGTH_SHORT).show();
 		    }
 		});
 ```
-<p float="left">
-  <img align="left" src="https://github.com/shubh420/Superior-Toasts/blob/shubh420-image-resources-update/Image%20Resources/13ForCodeSnippets.png?raw=true"   width="185"   />            
 
-for toasts from 'SuperiorToastWithHeadersPreDesigned' class.
+
+*<b> for toasts from 'SuperiorToastWithHeadersPreDesigned' class </b>
+<p float="left">
+  <img align="left" src="https://github.com/shubh420/Superior-Toasts/blob/shubh420-image-resources-update/Image%20Resources/13ForCodeSnippets.png?raw=true"   width="185"   /> 
+	
 ```
 SuperiorToastWithHeadersPreDesigned.makeSuperiorToast(getContext().getApplicationContext()
 	,SuperiorToastWithHeadersPreDesigned.ERROR_TOAST)
@@ -412,4 +414,47 @@ SuperiorToastWithHeadersPreDesigned.makeSuperiorToast(getContext().getApplicatio
 			Toast.makeText(getContext(), "action button clicked", Toast.LENGTH_SHORT).show();
 		    }
 		});
+```
+	
+## Show toast with action and animation.
+
+*<b> for toasts from 'SuperiorToast' class </b>
+<p float="left">
+  <img align="left" src="https://github.com/shubh420/Superior-Toasts/blob/shubh420-image-resources-update/Image%20Resources/13ForCodeSnippets.png?raw=true"   width="185"   /> 
+
+Use showWithActionAndAnimation(ViewGroup parentOrRootView, int animationTypeString, String actionName, final SuperiorToastActionCallback callback)` . 
+```
+  SuperiorToast.makeSuperiorToast(getContext().getApplicationContext(),
+ 	"hello")
+		.setToastIcon(getResources().getDrawable(R.drawable.ic_reddit_icon_svg))
+		.showWithActionAndAnimation((ViewGroup) getActivity().getWindow().getDecorView().getRootView()
+			,SuperiorToast.ANIMATION_SLIDE_LEFT_RIGHT_ENTRY_EXIT
+			,"Click" 
+			, new SuperiorToast.SuperiorToastActionCallback() {
+			    @Override
+			    public void onActionButtonClicked() {
+				Toast.makeText(getContext(), "clicked..", Toast.LENGTH_SHORT).show();
+			    }
+			});
+
+```
+
+*<b> for toasts from 'SuperiorToastWithHeadersPreDesigned' class </b>
+<p float="left">
+  <img align="left" src="https://github.com/shubh420/Superior-Toasts/blob/shubh420-image-resources-update/Image%20Resources/13ForCodeSnippets.png?raw=true"   width="185"   /> 
+
+Same as previous one ,Use showWithActionAndAnimation(ViewGroup parentOrRootView, int animationTypeString, String actionName, final SuperiorToastActionCallback callback)` . 
+```
+ SuperiorToastWithHeadersPreDesigned.makeSuperiorToast(getContext().getApplicationContext()
+	,SuperiorToastWithHeadersPreDesigned.ERROR_TOAST)
+		.showWithActionAndAnimation((ViewGroup) getActivity().getWindow().getDecorView().getRootView()
+			,SuperiorToast.ANIMATION_SLIDE_LEFT_RIGHT_ENTRY_EXIT
+			,"Click" 
+			, new SuperiorToast.SuperiorToastActionCallback() {
+			    @Override
+			    public void onActionButtonClicked() {
+				Toast.makeText(getContext(), "clicked..", Toast.LENGTH_SHORT).show();
+			    }
+			});
+
 ```
