@@ -130,7 +130,8 @@ dependencies {
 </p>
 
 ### UI Customizations
-#### set Icon Image
+
+*<b> set Icon Image</b>
 
 <p float="left">
   <img align="left" src="https://github.com/shubh420/Superior-Toasts/blob/shubh420-image-resources-update/Image%20Resources/2ForCodeSnippets.png?raw=true"   width="275" height="80"   />            
@@ -142,7 +143,7 @@ dependencies {
 ```
 </p>
 
-<h4>set Dark Mode </h4> to any kind of toast ,just call  ```.setDarkMode()``` on it.
+*<b>set Dark Mode </b> to any kind of toast ,just call  ```.setDarkMode()``` on it.
 
 
 <p float="left">
@@ -156,7 +157,7 @@ dependencies {
 ```
 </p>
 
-<B> set Custom Background </B>(any kind of Drawable)<b> and other customization functions. </b>
+*<B> set Custom Background </B>(any kind of Drawable)<b> and other customization functions. </b>
 
 
 <p float="left">
