@@ -131,10 +131,10 @@ dependencies {
 
 ### UI Customizations
 
-* <b> set Icon Image</b>
+ <b> set Icon Image</b>
 
 <p float="left">
-  <img align="left" src="https://github.com/shubh420/Superior-Toasts/blob/shubh420-image-resources-update/Image%20Resources/2ForCodeSnippets.png?raw=true"   width="275"    />            
+ * <img align="left" src="https://github.com/shubh420/Superior-Toasts/blob/shubh420-image-resources-update/Image%20Resources/2ForCodeSnippets.png?raw=true"   width="275"    />            
 
 ```
   SuperiorToast.makeSuperiorToast(getContext().getApplicationContext(),"hello")
@@ -194,7 +194,7 @@ dependencies {
 
 <b> deafult </b> 
 <p float="left">
-  <img align="left" src="https://github.com/shubh420/Superior-Toasts/blob/shubh420-image-resources-update/Image%20Resources/5ForCodeSnippets.png?raw=true"   width="275"    />            
+ <img align="left" src="https://github.com/shubh420/Superior-Toasts/blob/shubh420-image-resources-update/Image%20Resources/5ForCodeSnippets.png?raw=true"   width="275"    />            
 
 ```
 SuperiorToastWithHeadersPreDesigned.makeSuperiorToast(getContext().getApplicationContext()
@@ -230,7 +230,7 @@ SuperiorToastWithHeadersPreDesigned.makeSuperiorToast(getContext().getApplicatio
 ```
 </p>
 
-<b> custom toast just shows the way the toast looks with the content text<b>
+custom toast just shows the way the toast looks with the content text
 <p float="left">
   <img align="left" src="https://github.com/shubh420/Superior-Toasts/blob/shubh420-image-resources-update/Image%20Resources/9ForCodeSnippets.png?raw=true"   width="275"    />            
 
@@ -240,4 +240,32 @@ SuperiorToastWithHeadersPreDesigned.makeSuperiorToast(getContext().getApplicatio
 		.show();
 ```
 </p>
+
+### UI Customizations
+* <b>set Dark Mode </b>
+
+<p float="left">
+  <img align="left" src="https://github.com/shubh420/Superior-Toasts/blob/shubh420-image-resources-update/Image%20Resources/10ForCodeSnippets.png?raw=true"   width="275"   />            
+
+```
+SuperiorToastWithHeadersPreDesigned.makeSuperiorToast(getContext().getApplicationContext()
+	,SuperiorToastWithHeadersPreDesigned.SUCCESS_TOAST)
+		.setDarkMode()
+		.show();
+```
+</p>
+
+* <b>set subtitle or content text</b>
+
+<p float="left">
+  <img align="left" src="https://github.com/shubh420/Superior-Toasts/blob/shubh420-image-resources-update/Image%20Resources/11ForCodeSnippets.png?raw=true"   width="275"   />            
+
+```
+ SuperiorToastWithHeadersPreDesigned.makeSuperiorToast(getContext().getApplicationContext()
+	,SuperiorToastWithHeadersPreDesigned.SUCCESS_TOAST)
+		.setToastContentText("Content")
+		.show();
+```
+</p>
+
 
