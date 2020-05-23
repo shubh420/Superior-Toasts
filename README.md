@@ -185,7 +185,7 @@ dependencies {
 
 
 # Sample Code for - Superior Toasts with Pre-designed Toasts ,ready for use
-<b> Five toast types </b> 
+### Five toast types 
 ```
         1. INFORMATION_TOAST
         2. ERROR_TOAST
@@ -194,7 +194,7 @@ dependencies {
         5. CUSTOM_TOAST
 ```
 
-<b> deafult </b> 
+### Default 
 <p float="left">
  <img align="left" src="https://github.com/shubh420/Superior-Toasts/blob/shubh420-image-resources-update/Image%20Resources/5ForCodeSnippets.png?raw=true"   width="275"    />            
 
