@@ -142,7 +142,7 @@ dependencies {
 ```
 </p>
 
-<B>set Dark Mode </B> to any kind of toast ,just call  ```.setDarkMode()``` on it.
+<h4>set Dark Mode </h4> to any kind of toast ,just call  ```.setDarkMode()``` on it.
 
 
 <p float="left">
@@ -181,7 +181,14 @@ dependencies {
 * ```.removeLeftVerticleStrip()``` 
 
 
-	
+# Sample Code for - Superior Toasts with Pre-designed Toasts ,ready for use
+### Five toast types 
+```	INFORMATION_TOAST
+	ERROR_TOAST;
+	WARNING_TOAST
+	SUCCESS_TOAST
+	CUSTOM_TOAST ``` 
+
 
 
 
