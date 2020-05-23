@@ -127,6 +127,8 @@ dependencies {
  SuperiorToast.makeSuperiorToast(getContext().getApplicationContext(), "hello")
 	.show();
 ```
+
+<b>the code samples here are for calls from fragemnt.For context passing through Activty just use  `this` in place of `getContext().getApplicationContext()`.</b>
 </p>
 
 ### UI Customizations
@@ -139,7 +141,7 @@ dependencies {
 ```
   SuperiorToast.makeSuperiorToast(getContext().getApplicationContext(),"hello")
 	.setToastIcon(getResources().getDrawable(R.drawable.ic_reddit_icon_svg))
-	.show();
+	.show(); 
 ```
 </p>
 
@@ -174,7 +176,7 @@ dependencies {
 </p>
 
 * ```.setToastIconTintColor(String HexCodeColorString)``` //pass hex color code string 
-* ```.setElevation(float f)``` //pass floast value between 0f and 100f //applicable when the toast is shown using ```showWithAction``` 		or ```showWithSimpleAnimation ``` functions
+* ```.setElevation(float f)``` //pass floast value between 0f and 100f //applicable when the toast is shown using ```showWithAction``` 		or ```showWithSimpleAnimation ``` functions(explained below).
 * ```.setTextColor(String HexCodeColorString)```
 * ```.setBackgroundColor(String HexCodeColorString)``` //background of toast
 * ```.setBackgroundDrawable(Drawable drawable) ```
@@ -267,5 +269,19 @@ SuperiorToastWithHeadersPreDesigned.makeSuperiorToast(getContext().getApplicatio
 		.show();
 ```
 </p>
+
+* ```.setToastHeaderText(String header)``` //default header texts of Pre designed toasts like Success Toast can be changed.
+* ```.setToastContentText(String content) ``` //content text to any Pre designed toasts like Success Toast can be given. Like Warning Toast can have content text 'are u sure ,u want to exit'.
+* ```.setHeaderTextColor(String HexCodeColorString)```
+* ```.setContentTextColor(String HexCodeColorString)```
+* ```.removeIconImageView()```
+
+* ```.setToastIcon(Drawable drawable)``` 
+* ```.setToastIconTintColor(String HexCodeColorString)``` //pass hex color code string 
+* ```.setElevation(float f)``` //pass floast value between 0f and 100f //applicable when the toast is shown using ```showWithAction``` 		or ```showWithSimpleAnimation ``` functions(explained below).
+* ```.setBackgroundColor(String HexCodeColorString)``` //background of toast
+* ```.setBackgroundDrawable(Drawable drawable) ```
+* ```.setColorToLeftVerticleStrip(String HexCodeColorString)``` 
+* ```.removeLeftVerticleStrip()``` 
 
 
