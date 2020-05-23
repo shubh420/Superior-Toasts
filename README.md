@@ -134,7 +134,7 @@ dependencies {
 * <b> set Icon Image</b>
 
 <p float="left">
-  <img align="left" src="https://github.com/shubh420/Superior-Toasts/blob/shubh420-image-resources-update/Image%20Resources/2ForCodeSnippets.png?raw=true"   width="275" height="80"   />            
+  <img align="left" src="https://github.com/shubh420/Superior-Toasts/blob/shubh420-image-resources-update/Image%20Resources/2ForCodeSnippets.png?raw=true"   width="275"    />            
 
 ```
   SuperiorToast.makeSuperiorToast(getContext().getApplicationContext(),"hello")
@@ -147,7 +147,7 @@ dependencies {
 
 
 <p float="left">
-  <img align="left" src="https://github.com/shubh420/Superior-Toasts/blob/shubh420-image-resources-update/Image%20Resources/3ForCodeSnippets.png?raw=true"   width="275" height="80"   />            
+  <img align="left" src="https://github.com/shubh420/Superior-Toasts/blob/shubh420-image-resources-update/Image%20Resources/3ForCodeSnippets.png?raw=true"   width="275"   />            
 
 ```
   SuperiorToast.makeSuperiorToast(getContext().getApplicationContext(), "hello")
@@ -161,7 +161,7 @@ dependencies {
 
 
 <p float="left">
-  <img align="left" src="https://github.com/shubh420/Superior-Toasts/blob/shubh420-image-resources-update/Image%20Resources/4ForCodeSnippets.png?raw=true"   width="275" height="80"   />            
+  <img align="left" src="https://github.com/shubh420/Superior-Toasts/blob/shubh420-image-resources-update/Image%20Resources/4ForCodeSnippets.png?raw=true"   width="275"   />            
 
 ```
    SuperiorToast.makeSuperiorToast(getContext().getApplicationContext() ,"hello")
@@ -194,7 +194,7 @@ dependencies {
 
 <b> deafult </b> 
 <p float="left">
-  <img align="left" src="https://github.com/shubh420/Superior-Toasts/blob/shubh420-image-resources-update/Image%20Resources/5ForCodeSnippets.png?raw=true"   width="275" height="80"   />            
+  <img align="left" src="https://github.com/shubh420/Superior-Toasts/blob/shubh420-image-resources-update/Image%20Resources/5ForCodeSnippets.png?raw=true"   width="275"    />            
 
 ```
 SuperiorToastWithHeadersPreDesigned.makeSuperiorToast(getContext().getApplicationContext()
@@ -203,7 +203,7 @@ SuperiorToastWithHeadersPreDesigned.makeSuperiorToast(getContext().getApplicatio
 ```
 </p>
 <p float="left">
-  <img align="left" src="https://github.com/shubh420/Superior-Toasts/blob/shubh420-image-resources-update/Image%20Resources/6ForCodeSnippets.png?raw=true"   width="275" height="80"   />            
+  <img align="left" src="https://github.com/shubh420/Superior-Toasts/blob/shubh420-image-resources-update/Image%20Resources/6ForCodeSnippets.png?raw=true"   width="275"   />            
 
 ```
 SuperiorToastWithHeadersPreDesigned.makeSuperiorToast(getContext().getApplicationContext()
@@ -212,7 +212,7 @@ SuperiorToastWithHeadersPreDesigned.makeSuperiorToast(getContext().getApplicatio
 ```
 </p>
 <p float="left">
-  <img align="left" src="https://github.com/shubh420/Superior-Toasts/blob/shubh420-image-resources-update/Image%20Resources/7ForCodeSnippets.png?raw=true"   width="275" height="80"   />            
+  <img align="left" src="https://github.com/shubh420/Superior-Toasts/blob/shubh420-image-resources-update/Image%20Resources/7ForCodeSnippets.png?raw=true"   width="275"    />            
 
 ```
 SuperiorToastWithHeadersPreDesigned.makeSuperiorToast(getContext().getApplicationContext()
@@ -221,7 +221,7 @@ SuperiorToastWithHeadersPreDesigned.makeSuperiorToast(getContext().getApplicatio
 ```
 </p>
 <p float="left">
-  <img align="left" src="https://github.com/shubh420/Superior-Toasts/blob/shubh420-image-resources-update/Image%20Resources/8ForCodeSnippets.png?raw=true"   width="275" height="80"   />            
+  <img align="left" src="https://github.com/shubh420/Superior-Toasts/blob/shubh420-image-resources-update/Image%20Resources/8ForCodeSnippets.png?raw=true"   width="275"  />            
 
 ```
 SuperiorToastWithHeadersPreDesigned.makeSuperiorToast(getContext().getApplicationContext()
@@ -229,8 +229,10 @@ SuperiorToastWithHeadersPreDesigned.makeSuperiorToast(getContext().getApplicatio
 		.show();
 ```
 </p>
+
+<b> custom toast just shows the way the toast looks with the content text<b>
 <p float="left">
-  <img align="left" src="https://github.com/shubh420/Superior-Toasts/blob/shubh420-image-resources-update/Image%20Resources/9ForCodeSnippets.png?raw=true"   width="275" height="80"   />            
+  <img align="left" src="https://github.com/shubh420/Superior-Toasts/blob/shubh420-image-resources-update/Image%20Resources/9ForCodeSnippets.png?raw=true"   width="275"    />            
 
 ```
 SuperiorToastWithHeadersPreDesigned.makeSuperiorToast(getContext().getApplicationContext()
