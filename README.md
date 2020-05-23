@@ -324,7 +324,7 @@ SuperiorToastWithHeadersPreDesigned.makeSuperiorToast(getContext().getApplicatio
 
 </p>
 
-\
+
 * <b>Animation Slide Bottom Entry Exit</b>
 
 <p float="left">
@@ -347,7 +347,7 @@ SuperiorToastWithHeadersPreDesigned.makeSuperiorToast(getContext().getApplicatio
 ```
 
 </p>
-\
+
 * <b>Animation Fade In Fade Out Entry Exit</b>
 
 <p float="left">
