@@ -129,6 +129,19 @@ dependencies {
 ```
 </p>
 
+## UI Customizations
+### set Icon Image
+
+<p float="left">
+  <img align="left" src="https://github.com/shubh420/Superior-Toasts/blob/shubh420-image-resources-update/Image%20Resources/2ForCodeSnippets.png?raw=true"   width="275" height="80"   />            
+
+```
+  SuperiorToast.makeSuperiorToast(getContext().getApplicationContext(),"hello")
+	.setToastIcon(getResources().getDrawable(R.drawable.ic_reddit_icon_svg))
+	.show();
+```
+</p>
+
 
 	
 
