@@ -166,20 +166,20 @@ dependencies {
 ```
    SuperiorToast.makeSuperiorToast(getContext().getApplicationContext() ,"hello")
 	.setToastIcon(getResources().getDrawable(R.drawable.ic_reddit_icon_svg))
-	.setBackgroundDrawable(getResources().getDrawable(R.drawable.purple_bg))
+	.setBackgroundDrawable(getResources().getDrawable(R.drawable.purple_bg)) //<--
 	.removeLeftVerticleStrip()
 	.setTextColor("#ffffff")
 	.show();
 ```
 </p>
 
-* <p>* ```.setToastIconTintColor(String HexCodeColorString)``` //pass hex color code string 
+* ````.setToastIconTintColor(String HexCodeColorString)``` //pass hex color code string 
 * ```.setElevation(float f)``` //pass floast value between 0f and 100f //applicable when the toast is shown using ```showWithAction``` 		or ```showWithSimpleAnimation ``` functions
 * ```.setTextColor(String HexCodeColorString)```
 * ```.setBackgroundColor(String HexCodeColorString)``` //background of toast
 * ```.setBackgroundDrawable(Drawable drawable) ```
 * ```.setColorToLeftVerticleStrip(String HexCodeColorString)``` 
-* ```.removeLeftVerticleStrip()``` </p>
+* ```.removeLeftVerticleStrip()``` 
 
 
 # Sample Code for - Superior Toasts with Pre-designed Toasts ,ready for use
@@ -188,15 +188,4 @@ dependencies {
 	ERROR_TOAST;
 	WARNING_TOAST
 	SUCCESS_TOAST
-	CUSTOM_TOAST ``` 
-
-
-
-
-
-
-
-
-
-
-
+	CUSTOM_TOAST  ``` 
