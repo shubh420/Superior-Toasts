@@ -295,9 +295,11 @@ SuperiorToastWithHeadersPreDesigned.makeSuperiorToast(getContext().getApplicatio
 ```
 ### Code
 
-For to show toasts with animations, replace `.show()` methods in above codes with `.showWithSimpleAnimation( ViewGroup parentOrRootView, int animationType)`./n
-ParentOrRootView is the rootmost container layout of the xml of activity. <b>Its neccessary that rootmost layout is either Relative/frame/Coordinator/constraint Layout</b>.\n
-<b>Just pass `(ViewGroup) this.getWindow().getDecorView().getRootView() ` as 'parentOrRootView' parameter when calling from activty.Pass `(ViewGroup) getActivity().getWindow().getDecorView().getRootView() ` when calling from fragment.</b>
+For to show toasts with animations, replace `.show()` methods in above codes with `.showWithSimpleAnimation( ViewGroup parentOrRootView, int animationType)`.\
+\
+ParentOrRootView is the rootmost container layout of the xml of activity. <b>Its neccessary that rootmost layout is either Relative/frame/Coordinator/constraint Layout</b>.\
+\
+<b>When calling from activty, Pass `(ViewGroup) this.getWindow().getDecorView().getRootView() ` as 'parentOrRootView' parameter .Pass `(ViewGroup) getActivity().getWindow().getDecorView().getRootView() ` when calling from fragment.</b>
 
 * <b>Animation Slide Left Right Entry Exit</b>
 
@@ -317,6 +319,53 @@ SuperiorToastWithHeadersPreDesigned.makeSuperiorToast(getContext().getApplicatio
 		,SuperiorToastWithHeadersPreDesigned.SUCCESS_TOAST)
 		.showWithSimpleAnimation((ViewGroup) getActivity().getWindow().getDecorView().getRootView()
 			,SuperiorToastWithHeadersPreDesigned.ANIMATION_SLIDE_LEFT_RIGHT_ENTRY_EXIT);
+
+```
+
+</p>
+
+
+* <b>Animation Slide Bottom Entry Exit</b>
+
+<p float="left">
+  <img align="left" src="https://github.com/shubh420/Superior-Toasts/blob/shubh420-image-resources-update/Image%20Resources/222.gif?raw=true""   width="200"   />            
+
+for toasts from 'SuperiorToast' class.
+```
+SuperiorToast.makeSuperiorToast(getContext().getApplicationContext(),"hello")
+	.setToastIcon(getResources().getDrawable(R.drawable.ic_reddit_icon_svg))
+	.showWithSimpleAnimation((ViewGroup) getActivity().getWindow().getDecorView().getRootView()
+		,SuperiorToast.ANIMATION_SLIDE_BOTTOM_ENTRY_EXIT);
+```
+for toasts from 'SuperiorToastWithHeadersPreDesigned' class.
+```
+SuperiorToastWithHeadersPreDesigned.makeSuperiorToast(getContext().getApplicationContext()
+		,SuperiorToastWithHeadersPreDesigned.SUCCESS_TOAST)
+		.showWithSimpleAnimation((ViewGroup) getActivity().getWindow().getDecorView().getRootView()
+			,SuperiorToastWithHeadersPreDesigned.ANIMATION_SLIDE_BOTTOM_ENTRY_EXIT);
+
+```
+
+</p>
+
+* <b>Animation Fade In Fade Out Entry Exit</b>
+
+<p float="left">
+  <img align="left" src="https://github.com/shubh420/Superior-Toasts/blob/shubh420-image-resources-update/Image%20Resources/333.gif?raw=true""   width="200"   />            
+
+for toasts from 'SuperiorToast' class.
+```
+SuperiorToast.makeSuperiorToast(getContext().getApplicationContext(),"hello")
+	.setToastIcon(getResources().getDrawable(R.drawable.ic_reddit_icon_svg))
+	.showWithSimpleAnimation((ViewGroup) getActivity().getWindow().getDecorView().getRootView()
+		,SuperiorToast.ANIMATION_FADE_IN_OUT_ENTRY_EXIT);
+```
+for toasts from 'SuperiorToastWithHeadersPreDesigned' class.
+```
+SuperiorToastWithHeadersPreDesigned.makeSuperiorToast(getContext().getApplicationContext()
+		,SuperiorToastWithHeadersPreDesigned.SUCCESS_TOAST)
+		.showWithSimpleAnimation((ViewGroup) getActivity().getWindow().getDecorView().getRootView()
+			,SuperiorToastWithHeadersPreDesigned.ANIMATION_FADE_IN_OUT_ENTRY_EXIT);
 
 ```
 
