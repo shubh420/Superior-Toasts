@@ -129,8 +129,8 @@ dependencies {
 ```
 </p>
 
-## UI Customizations
-### set Icon Image
+### UI Customizations
+#### set Icon Image
 
 <p float="left">
   <img align="left" src="https://github.com/shubh420/Superior-Toasts/blob/shubh420-image-resources-update/Image%20Resources/2ForCodeSnippets.png?raw=true"   width="275" height="80"   />            
@@ -141,6 +141,44 @@ dependencies {
 	.show();
 ```
 </p>
+
+<B>set Dark Mode </B> to any kind of toast ,just call  ```.setDarkMode()``` on it.
+
+
+<p float="left">
+  <img align="left" src="https://github.com/shubh420/Superior-Toasts/blob/shubh420-image-resources-update/Image%20Resources/3ForCodeSnippets.png?raw=true"   width="275" height="80"   />            
+
+```
+  SuperiorToast.makeSuperiorToast(getContext().getApplicationContext(), "hello")
+	.setDarkMode()
+	.setToastIcon(getResources().getDrawable(R.drawable.ic_reddit_icon_svg))
+	.show();
+```
+</p>
+
+<B> set Custom Background </B>(any kind of Drawable)<b> and other customization functions. </b>
+
+
+<p float="left">
+  <img align="left" src="https://github.com/shubh420/Superior-Toasts/blob/shubh420-image-resources-update/Image%20Resources/4ForCodeSnippets.png?raw=true"   width="275" height="80"   />            
+
+```
+   SuperiorToast.makeSuperiorToast(getContext().getApplicationContext() ,"hello")
+	.setToastIcon(getResources().getDrawable(R.drawable.ic_reddit_icon_svg))
+	.setBackgroundDrawable(getResources().getDrawable(R.drawable.purple_bg))
+	.removeLeftVerticleStrip()
+	.setTextColor("#ffffff")
+	.show();
+```
+</p>
+
+* ```.setToastIconTintColor(String HexCodeColorString)``` //pass hex color code string 
+* ```.setElevation(float f)``` //pass floast value between 0f and 100f //applicable when the toast is shown using ```showWithAction``` 		or ```showWithSimpleAnimation ``` functions
+* ```.setTextColor(String HexCodeColorString)```
+* ```.setBackgroundColor(String HexCodeColorString)``` //background of toast
+* ```.setBackgroundDrawable(Drawable drawable) ```
+* ```.setColorToLeftVerticleStrip(String HexCodeColorString)``` 
+* ```.removeLeftVerticleStrip()``` 
 
 
 	
