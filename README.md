@@ -381,6 +381,11 @@ Replace `.show()` with `showWithAction(ViewGroup parentOrRootView, String action
 'actionName' is the name of the action button.
 
 ### for toasts from 'SuperiorToast' class 
+
+<p float="left">
+  <img align="left" src="https://github.com/shubh420/Superior-Toasts/blob/shubh420-image-resources-update/Image%20Resources/12ForCodeSnippets.png?raw=true"   width="185"   />            
+
+for toasts from 'SuperiorToast' class.
 ```
 SuperiorToast.makeSuperiorToast(getContext().getApplicationContext(),"hello")
 	.setToastIcon(getResources().getDrawable(R.drawable.ic_reddit_icon_svg))
@@ -389,6 +394,22 @@ SuperiorToast.makeSuperiorToast(getContext().getApplicationContext(),"hello")
 		    @Override
 		    public void onActionButtonClicked() {
 			Toast.makeText(getContext(), "Clicked..", Toast.LENGTH_SHORT).show();
+		    }
+		});
+```
+<p float="left">
+  <img align="left" src="https://github.com/shubh420/Superior-Toasts/blob/shubh420-image-resources-update/Image%20Resources/13ForCodeSnippets.png?raw=true"   width="185"   />            
+
+for toasts from 'SuperiorToastWithHeadersPreDesigned' class.
+```
+SuperiorToastWithHeadersPreDesigned.makeSuperiorToast(getContext().getApplicationContext()
+	,SuperiorToastWithHeadersPreDesigned.ERROR_TOAST)
+		.showWithAction((ViewGroup) getActivity().getWindow().getDecorView().getRootView()
+		,"Retry"
+		, new SuperiorToastWithHeadersPreDesigned.SuperiorToastActionCallback() {
+		    @Override
+		    public void onActionButtonClicked() {
+			Toast.makeText(getContext(), "action button clicked", Toast.LENGTH_SHORT).show();
 		    }
 		});
 ```
