@@ -297,7 +297,7 @@ SuperiorToastWithHeadersPreDesigned.makeSuperiorToast(getContext().getApplicatio
 
 For to show toasts with animations, replace `.show()` methods in above codes with `.showWithSimpleAnimation( ViewGroup parentOrRootView, int animationType)`.\
 \
-ParentOrRootView is the rootmost container layout of the xml of activity. <b>Its neccessary that rootmost layout is either Relative/frame/Coordinator/constraint Layout</b>.\
+'ParentOrRootView' is the rootmost container layout of the xml of activity. <b>Its neccessary that rootmost layout is either Relative/frame/Coordinator/constraint Layout</b>.\
 \
 <b>When calling from activty, Pass `(ViewGroup) this.getWindow().getDecorView().getRootView() ` as 'parentOrRootView' parameter .Pass `(ViewGroup) getActivity().getWindow().getDecorView().getRootView() ` when calling from fragment.</b>
 
@@ -370,3 +370,25 @@ SuperiorToastWithHeadersPreDesigned.makeSuperiorToast(getContext().getApplicatio
 ```
 
 </p>
+
+
+# Toasts with Action button (Like Snackbar)
+## Code
+Replace `.show()` with `showWithAction(ViewGroup parentOrRootView, String actionName, final SuperiorToastActionCallback callback)` . 
+
+'ParentOrRootView' is the rootmost container layout of the xml of activity. <b>Its neccessary that rootmost layout is either Relative/frame/Coordinator/constraint Layout</b>.<b>When calling from activty, Pass `(ViewGroup) this.getWindow().getDecorView().getRootView() ` as 'parentOrRootView' parameter .Pass `(ViewGroup) getActivity().getWindow().getDecorView().getRootView() ` when calling from fragment.</b>
+
+'actionName' is the name of the action button.
+
+### for toasts from 'SuperiorToast' class 
+```
+SuperiorToast.makeSuperiorToast(getContext().getApplicationContext(),"hello")
+	.setToastIcon(getResources().getDrawable(R.drawable.ic_reddit_icon_svg))
+	.showWithAction((ViewGroup) getActivity().getWindow().getDecorView().getRootView() ,
+		"Click" , new SuperiorToast.SuperiorToastActionCallback() {
+		    @Override
+		    public void onActionButtonClicked() {
+			Toast.makeText(getContext(), "Clicked..", Toast.LENGTH_SHORT).show();
+		    }
+		});
+```
