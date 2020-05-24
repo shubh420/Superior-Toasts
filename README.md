@@ -430,7 +430,7 @@ SuperiorToastWithHeadersPreDesigned.makeSuperiorToast(getContext().getApplicatio
 <p float="left">
   <img align="left" src="https://github.com/shubh420/Superior-Toasts/blob/shubh420-image-resources-update/Image%20Resources/2222.gif?raw=true"   width="185"   /> 
 
-Use `showWithActionAndAnimation(ViewGroup parentOrRootView, int animationTypeString, String actionName, final SuperiorToastActionCallback callback)` . 
+Use `showWithActionAndAnimation(ViewGroup parentOrRootView, int animationTypeString, String actionName, final SuperiorToastActionCallback callback) ` . 
 ```
   SuperiorToast.makeSuperiorToast(getContext().getApplicationContext(),
  	"hello")
@@ -465,13 +465,13 @@ Same as previous one ,Use `showWithActionAndAnimation(ViewGroup parentOrRootView
 			});
 
 ```
-## Dissmiss toast Manually(Programmatically).
+## Dissmiss toast Manually(Programmatically) And Indefinite Duration Setting.
 
-* <b> for toasts from 'SuperiorToast' class </b>
+* <b> for toasts from 'SuperiorToast' class,with manual dissmiss behavior </b>
 <p float="left">
   <img align="left" src="https://github.com/shubh420/Superior-Toasts/blob/shubh420-image-resources-update/Image%20Resources/3333.gif?raw=true"   width="185"   /> 
 
-Like SnackBar's behavior ,where Snackbar is dissmissed when Action button is cliked or some event happens, Normal Toasts and Toasts with action buttons can also be dissmissed on choice rather than toast automatically dissmissing after the pre defined duration.
+Like SnackBar's behavior ,where Snackbar is dissmissed when Action button is cliked or some event happens, Normal Toasts and Toasts with action buttons can also be dissmissed on choice rather than toast automatically dissmissing after the pre defined duration.This behavior works with `showWithSimpleAnimation`, `showWithAction` and `showWithActionAndAnimation`.
 ```
 final SuperiorToast toast = SuperiorToast.makeSuperiorToast(getContext().getApplicationContext()
 	,"hello")
@@ -488,7 +488,30 @@ toast .showWithActionAndAnimation((ViewGroup) getActivity().getWindow().getDecor
 		});
 
 ```
-<b>Above Example for `SuperiorToast` class toasts .For `SuperiorToastWithHeadersPreDesigned` class toasts ,the code is same ,just replace `SuperiorToast` with `SuperiorToastWithHeadersPreDesigned`. </b>
-\
-<b>Like SnackBar's behavior ,where Snackbar can be shown for duration indefinite and then only be dissmissed when required, The code usage of duration setting with action bar is given below in Duration section .</b>
+
+* <b> for toasts from 'SuperiorToastWithHeadersPreDesigned' class </b>
+<b>Above Example for `SuperiorToast` class toasts .For `SuperiorToastWithHeadersPreDesigned` class toasts ,the code is same ,just replace `SuperiorToast` with `SuperiorToastWithHeadersPreDesigned`.
+
+Like SnackBar's behavior ,where Snackbar can be shown for duration indefinite and then only be dissmissed when required, The code usage of duration setting with action Button is given below .Use `setDurationCustom(int )` ,parameter takes int value of milliseconds Or predefined attributes .More About the Custom Duration is explained in the 'Duration section below'.</b>
+
+  <img align="left" src="https://github.com/shubh420/Superior-Toasts/blob/shubh420-image-resources-update/Image%20Resources/5555.gif?raw=true"   width="185"   /> 
+  
+  ```
+final SuperiorToastWithHeadersPreDesigned toast = SuperiorToastWithHeadersPreDesigned
+	.makeSuperiorToast(getContext().getApplicationContext()
+		, SuperiorToastWithHeadersPreDesigned.CUSTOM_TOAST)
+			.setToastHeaderText("Duration")
+                        .setToastContentText("length Indefinite(manual dissmiss)")
+                        .setDurationCustom(SuperiorToastWithHeadersPreDesigned.LENGTH_INDEFINITE); //<==== Here duration setting
+              
+toast .showWithAction((ViewGroup) getActivity().getWindow().getDecorView().getRootView()
+		, "Dissmiss"
+		, new SuperiorToastWithHeadersPreDesigned.SuperiorToastActionCallback() {
+			@Override
+			public void onActionButtonClicked() {
+			    SuperiorToastWithHeadersPreDesigned.hideToast(toast);
+			}
+		    });
+
+```
 
