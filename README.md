@@ -471,7 +471,7 @@ Same as previous one ,Use `showWithActionAndAnimation(ViewGroup parentOrRootView
 <p float="left">
   <img align="left" src="https://github.com/shubh420/Superior-Toasts/blob/shubh420-image-resources-update/Image%20Resources/3333.gif?raw=true"   width="185"   /> 
 
-Like SnackBar's behavior ,where Snackbar is dissmissed when Action button is cliked or some event happens, Normal Toasts and Toasts with action buttons can also be dissmissed on choice rather than toast automatically dissmissing after the pre defined duration.This behavior works with `showWithSimpleAnimation`, `showWithAction` and `showWithActionAndAnimation`.
+Like SnackBar's behavior ,where Snackbar is dissmissed when Action button is cliked or some event happens, Normal Toasts and Toasts with action buttons can also be dissmissed on choice rather than toast automatically dissmissing after the pre defined duration.This behavior `hideToast(toast)` works with `showWithSimpleAnimation`, `showWithAction` and `showWithActionAndAnimation`.
 ```
 final SuperiorToast toast = SuperiorToast.makeSuperiorToast(getContext().getApplicationContext()
 	,"hello")
@@ -492,10 +492,11 @@ toast .showWithActionAndAnimation((ViewGroup) getActivity().getWindow().getDecor
 * <b> for toasts from 'SuperiorToastWithHeadersPreDesigned' class </b>
 <b>Above Example for `SuperiorToast` class toasts .For `SuperiorToastWithHeadersPreDesigned` class toasts ,the code is same ,just replace `SuperiorToast` with `SuperiorToastWithHeadersPreDesigned`.
 
-Like SnackBar's behavior ,where Snackbar can be shown for duration indefinite and then only be dissmissed when required, The code usage of duration setting with action Button is given below .Use `setDurationCustom(int )` ,parameter takes int value of milliseconds Or predefined attributes .More About the Custom Duration is explained in the 'Duration section below'.</b>
-
-  <img align="left" src="https://github.com/shubh420/Superior-Toasts/blob/shubh420-image-resources-update/Image%20Resources/5555.gif?raw=true"   width="185"   /> 
-  
+* <b> for toasts with Manual Dissmiss and Duration Indefinite behavior </b>
+<p float="left">
+  <img align="left" src="https://github.com/shubh420/Superior-Toasts/blob/shubh420-image-resources-update/Image%20Resources/5555.gif?raw=true"   width="185"   />
+	
+Like SnackBar's behavior ,where Snackbar can be shown for duration indefinite and then only be dissmissed when required, The code usage of duration setting with action Button is given below .Use `setDurationCustom(int )` ,parameter takes int value of milliseconds Or predefined attributes .More About the Custom Duration is explained in the 'Duration section below'.
   ```
 final SuperiorToastWithHeadersPreDesigned toast = SuperiorToastWithHeadersPreDesigned
 	.makeSuperiorToast(getContext().getApplicationContext()
@@ -514,4 +515,46 @@ toast .showWithAction((ViewGroup) getActivity().getWindow().getDecorView().getRo
 		    });
 
 ```
+<b> Above example uses `SuperiorToastWithHeadersPreDesigned` ,but the same example of custom duration will work with the `SuperiorToast` ,using same code.Just replace  `SuperiorToastWithHeadersPreDesigned` with `SuperiorToast`. </b>
+
+
+
+## Duration
+
+### Four Duration options
+```
+        1. LENGTH_LONG 
+        2. LENGTH_SHORT
+        3. LENGTH_INDEFINITE
+	4. Any time duration like '5000' ,which is 5 sec 
+```
+<b> By default duration is `LENGTH_LONG` .</b>
+`LENGTH_LONG` is of 3.5 seconds , `LENGTH_SHORT` is of 2 seconds and `LENGTH_INDEFINITE` is when You dont want the toast to dissmiss automatically after some duration.\
+<b> with `.show()` method only  `LENGTH_LONG` and `LENGTH_SHORT` can be passed to `setDurationCustom(int)`.
+For to use `LENGTH_LONG` , `LENGTH_SHORT` ,`LENGTH_INDEFINITE` and `Any time duration` on `setDurationCustom(int) ,use any of  `showWithSimpleAnimation`, `showWithAction` and `showWithActionAndAnimation` .  </b>
+
+* <b> `LENGTH_LONG` and  `LENGTH_SHORT` </b>
+```
+  SuperiorToastWithHeadersPreDesigned.makeSuperiorToast(getContext().getApplicationContext()
+                        , SuperiorToastWithHeadersPreDesigned.CUSTOM_TOAST)
+                        .setToastHeaderText("Duration")
+                        .setToastContentText("length Long") 
+                        .setDurationCustom(SuperiorToastWithHeadersPreDesigned.LENGTH_LONG) //<====
+                        .show(); //when used .show() ,only LENGTH_LONG and LENGTH_SHORT will work.
+
+```
+<b> Above example uses `SuperiorToastWithHeadersPreDesigned` ,but it will work in same manner when used with  `SuperiorToast` </b>
+
+* <b> Any time duration </b>
+```
+ SuperiorToastWithHeadersPreDesigned.makeSuperiorToast(getContext().getApplicationContext()
+	, SuperiorToastWithHeadersPreDesigned.CUSTOM_TOAST)
+		.setToastHeaderText("Duration")
+		.setToastContentText("length custom (1000 or 1 ms)")
+		.setDurationCustom(1000)
+		.showWithSimpleAnimation((ViewGroup)getActivity().getWindow().getDecorView().getRootView()
+			,SuperiorToastWithHeadersPreDesigned.ANIMATION_NO_ANIMATION);
+
+```
+<b> Above example uses `SuperiorToastWithHeadersPreDesigned` ,but it will work in same manner when used with  `SuperiorToast` </b>
 
