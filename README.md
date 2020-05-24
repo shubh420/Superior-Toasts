@@ -1,4 +1,8 @@
 # Superior Toasts -A beautiful Multipurpose Fully customizable Toast library for Android.
+
+[![platform](https://img.shields.io/badge/platform-Android-yellow.svg)](https://www.android.com)
+[![License](https://img.shields.io/github/license/shubh420/Superior-Toasts)
+
 Create beautiful toasts(like reddit android app's) with features like Icon, headers, action buttons(like snackbar's) and animations support.
 
 <p float="left">
