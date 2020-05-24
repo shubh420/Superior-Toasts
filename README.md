@@ -380,7 +380,7 @@ Replace `.show()` with `showWithAction(ViewGroup parentOrRootView, String action
 
 'actionName' is the name of the action button.
 
-*<b> for toasts from 'SuperiorToast' class </b>
+* <b> for toasts from 'SuperiorToast' class </b>
 
 <p float="left">
   <img align="left" src="https://github.com/shubh420/Superior-Toasts/blob/shubh420-image-resources-update/Image%20Resources/12ForCodeSnippets.PNG?raw=true"   width="185"   />            
@@ -399,7 +399,7 @@ SuperiorToast.makeSuperiorToast(getContext().getApplicationContext(),"hello")
 ```
 
 
-*<b> for toasts from 'SuperiorToastWithHeadersPreDesigned' class </b>
+* <b> for toasts from 'SuperiorToastWithHeadersPreDesigned' class </b>
 <p float="left">
   <img align="left" src="https://github.com/shubh420/Superior-Toasts/blob/shubh420-image-resources-update/Image%20Resources/13ForCodeSnippets.png?raw=true"   width="185"   /> 
 	
@@ -418,11 +418,19 @@ SuperiorToastWithHeadersPreDesigned.makeSuperiorToast(getContext().getApplicatio
 	
 ## Show toast with action and animation.
 
-*<b> for toasts from 'SuperiorToast' class </b>
-<p float="left">
-  <img align="left" src="https://github.com/shubh420/Superior-Toasts/blob/shubh420-image-resources-update/Image%20Resources/13ForCodeSnippets.png?raw=true"   width="185"   /> 
+### Four Animation options
+```
+        1. ANIMATION_SLIDE_LEFT_RIGHT_ENTRY_EXIT
+        2. ANIMATION_FADE_IN_OUT_ENTRY_EXIT
+        3. ANIMATION_SLIDE_BOTTOM_ENTRY_EXIT
+        4. ANIMATION_NO_ANIMATION
+```
 
-Use showWithActionAndAnimation(ViewGroup parentOrRootView, int animationTypeString, String actionName, final SuperiorToastActionCallback callback)` . 
+* <b> for toasts from 'SuperiorToast' class </b>
+<p float="left">
+  <img align="left" src="https://github.com/shubh420/Superior-Toasts/blob/shubh420-image-resources-update/Image%20Resources/2222.gif?raw=true"   width="185"   /> 
+
+Use `showWithActionAndAnimation(ViewGroup parentOrRootView, int animationTypeString, String actionName, final SuperiorToastActionCallback callback)` . 
 ```
   SuperiorToast.makeSuperiorToast(getContext().getApplicationContext(),
  	"hello")
@@ -439,11 +447,10 @@ Use showWithActionAndAnimation(ViewGroup parentOrRootView, int animationTypeStri
 
 ```
 
-*<b> for toasts from 'SuperiorToastWithHeadersPreDesigned' class </b>
+* <b> for toasts from 'SuperiorToastWithHeadersPreDesigned' class </b>
 <p float="left">
-  <img align="left" src="https://github.com/shubh420/Superior-Toasts/blob/shubh420-image-resources-update/Image%20Resources/13ForCodeSnippets.png?raw=true"   width="185"   /> 
 
-Same as previous one ,Use showWithActionAndAnimation(ViewGroup parentOrRootView, int animationTypeString, String actionName, final SuperiorToastActionCallback callback)` . 
+Same as previous one ,Use `showWithActionAndAnimation(ViewGroup parentOrRootView, int animationTypeString, String actionName, final SuperiorToastActionCallback callback) ` . 
 ```
  SuperiorToastWithHeadersPreDesigned.makeSuperiorToast(getContext().getApplicationContext()
 	,SuperiorToastWithHeadersPreDesigned.ERROR_TOAST)
@@ -458,3 +465,30 @@ Same as previous one ,Use showWithActionAndAnimation(ViewGroup parentOrRootView,
 			});
 
 ```
+## Dissmiss toast Manually(Programmatically).
+
+* <b> for toasts from 'SuperiorToast' class </b>
+<p float="left">
+  <img align="left" src="https://github.com/shubh420/Superior-Toasts/blob/shubh420-image-resources-update/Image%20Resources/3333.gif?raw=true"   width="185"   /> 
+
+Like SnackBar's behavior ,where Snackbar is dissmissed when Action button is cliked or some event happens, Normal Toasts and Toasts with action buttons can also be dissmissed on choice rather than toast automatically dissmissing after the pre defined duration.
+```
+final SuperiorToast toast = SuperiorToast.makeSuperiorToast(getContext().getApplicationContext()
+	,"hello")
+		.setToastIcon(getResources().getDrawable(R.drawable.ic_reddit_icon_svg));
+
+toast .showWithActionAndAnimation((ViewGroup) getActivity().getWindow().getDecorView().getRootView()
+	,SuperiorToast.ANIMATION_SLIDE_LEFT_RIGHT_ENTRY_EXIT
+	,"Dissmiss toast" 
+	, new SuperiorToast.SuperiorToastActionCallback() {
+		    @Override
+		    public void onActionButtonClicked() {
+			 SuperiorToast.hideToast(toast);
+		    }
+		});
+
+```
+<b>Above Example for `SuperiorToast` class toasts .For `SuperiorToastWithHeadersPreDesigned` class toasts ,the code is same ,just replace `SuperiorToast` with `SuperiorToastWithHeadersPreDesigned`. </b>
+\
+<b>Like SnackBar's behavior ,where Snackbar can be shown for duration indefinite and then only be dissmissed when required, The code usage of duration setting with action bar is given below in Duration section .</b>
+
