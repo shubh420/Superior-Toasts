@@ -490,7 +490,7 @@ toast .showWithActionAndAnimation((ViewGroup) getActivity().getWindow().getDecor
 ```
 
 * <b> for toasts from 'SuperiorToastWithHeadersPreDesigned' class </b>
-<b>Above Example for `SuperiorToast` class toasts .For `SuperiorToastWithHeadersPreDesigned` class toasts ,the code is same ,just replace `SuperiorToast` with `SuperiorToastWithHeadersPreDesigned`.
+<b>Above Example for `SuperiorToast` class toasts .For `SuperiorToastWithHeadersPreDesigned` class toasts ,the code is same ,just replace `SuperiorToast` with `SuperiorToastWithHeadersPreDesigned`.</b>
 
 * <b> for toasts with Manual Dissmiss and Duration Indefinite behavior </b>
 <p float="left">
@@ -519,7 +519,7 @@ toast .showWithAction((ViewGroup) getActivity().getWindow().getDecorView().getRo
 
 
 
-## Duration
+# Duration
 
 ### Four Duration options
 ```
